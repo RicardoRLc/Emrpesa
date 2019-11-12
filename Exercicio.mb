@@ -1,0 +1,45 @@
+-- MENU
+
+-Cadastrar Cliente -> userName / psw / nome / endereço / telefone
+-Cadastrar Funcionário -> userName / psw / nome / salário / banco
+-Cadastrar Venda -> idProduto / quantidade  # solicite se o usuário quer cadastrar novo idProduto
+
+//
+
+-Exibir Funcionários                         # Lista os Funcionários
+-Exibir Clientes                             # Lista os Clientes
+-Exibir Compra cliente -> idCliente          # Lista a compra dos Clientes
+-Exibir venda funcionário -> idFuncionário   # Lista a venda dos Funcionários
+-Valida Acesso -> userName / psw             # Auntentica o Acesso
+
+
+
+USUÁRIO
+id - int 
+userName - String
+psw - String
+nome - String
+-----
+autenticar() Boolean
+nome() String
+
+
+
+FUNCIONÁRIO                                             CLIENTE
+id - int                                                id - int
+salário - double                                        endereco - String
+banco - String                                          telefone - String
+dt Admissao - date                                      dt cadastro - Date
+-----                                                   --------
+nome() String                                           nome() String
+tempo contrato() String                                 qtd compras() int
+qtd vendas () int                                       valor compras() double
+
+
+
+VENDA                                                   VENDA PRODUTO                                 PRODUTO
+id - int                                                quantidade                                    id - int
+dt venda - Date                                                                                       
+-------
+total() double
+produtos() String
